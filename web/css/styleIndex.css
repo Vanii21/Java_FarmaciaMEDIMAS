@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 5%;
+    background-image: url("../img/fonFarm.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100svw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.loggin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background: rgba(97, 142, 218, 0.529);
+    width: 350px;
+    height: 450px;
+    border-radius: 35px;
+    box-shadow: 1px 1px 25px 4px white;
+}
+
+.loggin img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 9px #fff;
+}
+
+.loggin form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.titleFarmacia{
+    font-size: 30px;
+    padding: 20px;
+    align-content: center;
+    font-weight: bolder;
+    color: rgb(240, 242, 255);
+}
+
+.etiquetaFarmacia{
+    position: absolute;
+    bottom: 32%;
+    left: 0;
+    width: 100%;
+    height: 9%;
+    pointer-events: none;
+    border-bottom: 2px solid #c7c7c7;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(240, 242, 255);
+}
+
+.etiquetaFarmacia::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transform: translateX(0%);
+    transition: all 0.9s ease;
+}
+
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.9s ease;
+    color: #fff;
+}
+
+form input:focus + .etiquetaFarmacia::after{
+    transform: translateX(0%);
+}
+
+form input:focus + .etiquetaFarmacia, .text-nomb{
+    transform: translateY(-150%);
+    font-size: 20px;
+    color: rgb(240, 242, 255);
+}
+
+
+form input{
+    width: 110%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    background: none;
+    color: #fff;
+    border-radius: 10px;
+    padding-top: 20px;
+    
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    background: rgb(112, 192, 253);
+    padding: 10px 100%;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+a:hover{
+    background: aliceblue;
+    color: black;
+    transition: 1000ms;
+}
+

@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 4%;
+    justify-content: center;
+    background-image: url(/img/fonFarm4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100svw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.opcionGeneral{
+    width: 1200px;
+    height: 600px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: #ffffffc3;
+}
+
+.opcionGeneral .encabezado{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.opcionGeneral .encabezado .logo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.opcionGeneral .encabezado .logo img{
+    width: 90px;
+    height: 90px;
+}
+
+.opcionGeneral .encabezado .botones{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.opcionGeneral .encabezado .botones .busqueda{
+    width: 50%;
+    text-align: center;
+}
+
+.opcionGeneral .encabezado .botones .busqueda input{
+    background: rgb(255, 255, 255);
+    width: 70%;
+    border: solid 1px rgba(100, 148, 237, 0.645);
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.opcionGeneral .encabezado .botones .busqueda input::placeholder{
+    color: rgba(0, 0, 0, 0.618);
+}
+
+.opcionGeneral .encabezado .botones .busqueda a{
+    border-radius: 10px;
+    padding: 9px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+    background: rgba(100, 148, 237, 0.836);
+}
+
+.opcionGeneral .encabezado .botones .busqueda a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: rgba(151, 185, 247, 0.605);
+}
+
+.opcionGeneral .encabezado .botones .boton{
+    width: 50%;
+    text-align: center;
+}
+
+.opcionGeneral .encabezado .botones .boton a{
+    border-radius: 10px;
+    padding: 9px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+    background: rgba(100, 148, 237, 0.815);
+}
+
+.opcionGeneral .encabezado .botones .boton a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: rgba(151, 185, 247, 0.605);
+}
+
+.containerTable{
+    width: 100%;
+    height: 200%;
+}
+
+.containerTable table{
+    color:  black;
+    font-size: 15px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.containerTable table thead{
+    background: rgba(100, 148, 237, 0.645);
+}
+
+.containerTable table thead th{
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+.containerTable table tbody td{
+    padding: 15px 15px;
+    text-align: center;
+    border-bottom: solid 1px rgba(100, 148, 237, 0.645);
+}
